@@ -5,14 +5,10 @@ import heart from './img/heart.svg';
 import profile from './img/profile.svg';
 import { MainActivityCard } from '../main-activity-card';
 
-export function MainActivityCards() {
-    return (
-        <div className={styles.cards_wrapper}>
-            <MainActivityCard icon={heart} title="Тренировки" text="Расписать тренировки" />
-            <MainActivityCard icon={calendar} title="Календарь" text="Назначить календарь" />
-            <MainActivityCard icon={profile} title="Профиль" text="Заполнить профиль" />
-        </div>
-    )
-}
-
-export default MainActivityCards;
+export const MainActivityCards = () => (
+    <div className={styles.cards_wrapper}>
+        <MainActivityCard icon={heart} title='Тренировки' text='Расписать тренировки' />
+        <MainActivityCard icon={calendar} title='Календарь' text='Назначить календарь' />
+        <MainActivityCard icon={profile} title='Профиль' text='Заполнить профиль' />
+    </div>
+);

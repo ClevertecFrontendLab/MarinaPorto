@@ -52,7 +52,6 @@
     .text {
         text-align: center;
     }
-
 }
 
 @media screen and (max-width: 360px) {
@@ -61,6 +60,6 @@
     }
 
     .text {
-        text-align: center
+        text-align: center;
     }
 }

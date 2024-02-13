@@ -1,6 +1,6 @@
 .header {
     background: rgb(240, 245, 255);
-    padding: 16px 24px 16px 24px;
+    padding: 16px 24px 21px 24px;
     color: rgb(38, 38, 38);
 }
 
@@ -31,7 +31,7 @@
     line-height: 130%;
     letter-spacing: 0%;
     text-align: left;
-    margin-bottom: 19px;
+    margin-bottom: 14px;
 }
 
 .settings {
@@ -80,6 +80,9 @@
         padding-right: 0px;
     }
 
+    .settings {
+        padding-right: 14px;
+    }
 }
 
 @media screen and (max-width: 632px) {
@@ -101,10 +104,9 @@
     }
 }
 
-
 @media screen and (max-width: 360px) {
     .bread_crumbs {
-        margin-bottom: 30px;
+        margin-bottom: 6px;
     }
 
     .title_mob {
@@ -113,5 +115,10 @@
 
     .settings .icon_title {
         display: none;
+    }
+    .settings {
+        padding-right: 0px;
+        position: relative;
+        top: -6px;
     }
 }

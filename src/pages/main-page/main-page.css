@@ -25,7 +25,8 @@ img {
 
 .logo {
     height: 6em;
-    padding: 1.5em;
+    padding: 21px;
+    padding-left: 3px;
     will-change: filter;
     transition: filter 300ms;
     text-align: center;
@@ -46,7 +47,7 @@ img {
 }
 
 .ant-menu {
-    padding-top: 30px !important;
+    padding-top: 37px !important;
 }
 
 .ant-menu-item {
@@ -76,12 +77,24 @@ img {
     padding-left: 24px !important;
 }
 
+.ant-layout-sider-collapsed.ant-layout-sider {
+    padding-top: 29px;
+}
+
+.ant-layout-sider-collapsed.ant-layout-sider .ant-menu {
+    padding-top: 31px !important;
+}
+
+.exit-block .ant-menu.ant-menu-inline-collapsed > .ant-menu-item {
+    padding-left: 15px !important;
+}
+
 .ant-layout-sider-collapsed .logo {
     padding: 0;
 }
 
 .trigger-btn {
-    background-image: url("./img/icon-bg.png");
+    background-image: url('./img/icon-bg.png');
     background-repeat: no-repeat;
     width: 20px;
     height: 66px;
@@ -116,6 +129,8 @@ img {
     line-height: 130%;
     letter-spacing: 0%;
     text-align: center;
+    margin-bottom: 10px;
+    padding-left: 15px;
 }
 
 .ant-layout-sider {
@@ -126,7 +141,6 @@ img {
     width: 100%;
     position: absolute;
     bottom: 0;
-
 }
 
 .exit-block .ant-menu-item {
@@ -135,11 +149,11 @@ img {
     margin: 0 !important;
 }
 
-.ant-menu-item .ant-menu-item-icon+span {
+.ant-menu-item .ant-menu-item-icon + span {
     margin-left: 11px !important;
 }
 
-.exit-block .ant-menu-item .ant-menu-item-icon+span {
+.exit-block .ant-menu-item .ant-menu-item-icon + span {
     margin-left: 26px !important;
 }
 
@@ -151,11 +165,17 @@ img {
 
 @media screen and (max-width: 834px) {
     .wrapper {
+        background-image: url('./img/834_bg.jpg');
         background-position: 54% 0%;
     }
 
     .ant-layout-footer {
-        padding-top: 362px !important;
+        /* padding-top: 361px !important; */
+        padding-top: 238px !important;
+    }
+
+    .ant-layout-footer.footer-padding {
+        padding-top: 360px !important;
     }
 }
 
@@ -168,7 +188,6 @@ img {
     .footer-link {
         order: 2;
         margin-top: 33px;
-
     }
 
     .sider-fit {
@@ -187,7 +206,7 @@ img {
     }
 
     .trigger-btn {
-        background-image: url("./img/icon-bg-mob.png");
+        background-image: url('./img/icon-bg-mob.png');
         width: 32px;
         height: 48px;
         position: absolute;
@@ -202,7 +221,7 @@ img {
     }
 
     .ant-layout-sider-collapsed.trigger-btn {
-        background-image: url("./img/icon-bg-mob.png");
+        background-image: url('./img/icon-bg-mob.png');
         width: 32px;
         height: 48px;
         position: absolute;
@@ -218,8 +237,8 @@ img {
     }
 
     .logo {
-        padding: 16px;
-        padding-left: 24px;
+        padding: 13px;
+        padding-left: 15px;
     }
 
     .ant-menu-item {
@@ -231,7 +250,7 @@ img {
         display: none;
     }
 
-    .ant-menu-item .ant-menu-item-icon+span {
+    .ant-menu-item .ant-menu-item-icon + span {
         margin-left: 0 !important;
     }
 
@@ -249,31 +268,58 @@ img {
 }
 
 @media screen and (max-width: 360px) {
+    .logo {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .logo img {
+        width: 73px;
+    }
+
     .main-content {
         padding: 16px;
+        padding-top: 24px;
     }
 
     .ant-layout-footer {
         padding-top: 24px !important;
     }
 
-    .exit-block .ant-menu-item .ant-menu-item-icon+span {
+    .exit-block .ant-menu-item .ant-menu-item-icon + span {
         margin-left: 0px !important;
     }
 
     .ant-menu-item {
         margin-bottom: 8px !important;
     }
+
+    .ant-layout-footer.footer-padding {
+        padding-top: 7px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .footer-link {
+        padding-left: 0px;
+    }
+
+    .ant-menu {
+        padding-top: 19px !important;
+    }
 }
 
 .trigger-btn svg path {
-    fill: #8C8C8C;
+    fill: #8c8c8c;
 }
 
 .ant-layout-sider {
     background: #fff !important;
 }
 
-.ant-layout.ant-layout-has-sider>.ant-layout {
+.ant-layout.ant-layout-has-sider > .ant-layout {
     width: 100% !important;
 }

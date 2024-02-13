@@ -31,5 +31,6 @@
 @media screen and (max-width: 360px) {
     .card_wrapper {
         padding: 16px;
+        line-height: 132%;
     }
 }
