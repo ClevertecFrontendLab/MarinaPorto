@@ -1,0 +1,11 @@
+.cards_wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+@media screen and (max-width: 680px) {
+    .cards_wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,30 @@
+.card_wrapper {
+    background-color: #fff;
+    padding: 24px;
+    max-width: 752px;
+    margin-bottom: 16px;
+}
+
+.card_wrapper h4 {
+    color: rgb(38, 38, 38);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .card_wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card_wrapper {
+        padding: 16px;
+    }
+}
