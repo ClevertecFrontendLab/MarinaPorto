@@ -1,0 +1,124 @@
+.header {
+    background: rgb(240, 245, 255);
+    padding: 16px 24px 21px 24px;
+    color: rgb(38, 38, 38);
+}
+
+.title_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    gap: 26px;
+}
+
+.title_desc {
+    max-width: 1045px;
+    padding: 0px;
+    flex-grow: 1;
+    color: rgb(38, 38, 38);
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.bread_crumbs {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.settings {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.title_mob {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .title_mob {
+        display: block;
+        color: rgb(38, 38, 38);
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .title_desc {
+        display: none;
+    }
+
+    .bread_crumbs {
+        margin-bottom: 14px;
+    }
+
+    .title_wrapper {
+        gap: 10px;
+    }
+
+    .title_wrapper {
+        padding-right: 0px;
+    }
+
+    .settings {
+        padding-right: 14px;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .title_desc {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .title_mob {
+        display: none;
+    }
+
+    .settings .icon_title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bread_crumbs {
+        margin-bottom: 6px;
+    }
+
+    .title_mob {
+        display: none;
+    }
+
+    .settings .icon_title {
+        display: none;
+    }
+    .settings {
+        padding-right: 0px;
+        position: relative;
+        top: -6px;
+    }
+}
